@@ -1,0 +1,97 @@
+@font-face {
+    font-family: roboto;
+    src: url("assets/fonts/Roboto-Black.ttf");
+}
+#presentation_site{
+    margin: auto;
+    margin-top: 20px;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', /*'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,*/ sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(71, 3, 110);
+    font-size: medium;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Segoe UI';
+    margin-left: 750px;
+    padding: 10px;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+header h1{
+    border-bottom: solid #9A9996 2px;
+    width: 79%;
+    margin: auto;
+    color: #26A269;
+}
+article{
+    width: 800px;
+    height: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin: auto;
+    margin-block: 20px;
+    background-color: #094d2d57;
+}
+#img img{
+    width: 800px;
+    height: 438px;
+}
+#Menu{
+    border-right: 1px solid rgb(48, 4, 67);
+}
+#img{
+    display: flex;
+    animation-duration: 50s;
+    animation-name: images;
+    animation-iteration-count: infinite;
+}
+@keyframes images{
+    0%{
+    transform: translateX(0)
+}
+    25%{
+    transform: translateX(-720px)  
+}
+    50%{
+    transform: translateX(-1450px)
+}
+    75%{
+    transform: translateX(-2000px)
+}
+    100%{
+    transform: translateX(0)
+}
+}
+#caroussel{
+    width: 800px;
+    overflow: hidden;
+}
+#center{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0px;
+    margin: 0px;
+
+}
+#monc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#logo{
+    width: 130px;
+    height: 150px;
+    background-color: rgba(195, 165, 129, 0.748);
+}
+
